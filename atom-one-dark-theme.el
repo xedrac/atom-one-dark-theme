@@ -34,7 +34,8 @@
   (let* ((256color  (eq (display-color-cells (selected-frame)) 256))
          (colors `(("atom-one-dark-accent"   . "#528BFF")
                    ("atom-one-dark-fg"       . (if ,256color "color-248" "#ABB2BF"))
-                   ("atom-one-dark-bg"       . (if ,256color "color-235" "#282C34"))
+                   ;("atom-one-dark-bg"       . (if ,256color "color-235" "#282C34"))
+                   ("atom-one-dark-bg"       . (if ,256color "color-235" "#232326"))
                    ("atom-one-dark-bg-1"     . (if ,256color "color-234" "#121417"))
                    ("atom-one-dark-bg-hl"    . (if ,256color "color-236" "#2C323C"))
                    ("atom-one-dark-gutter"   . (if ,256color "color-239" "#4B5363"))
@@ -645,8 +646,8 @@
 
    ;; realgud
    `(realgud-overlay-arrow1        ((t (:foreground ,atom-one-dark-green))))
-   `(realgud-overlay-arrow3        ((t (:foreground ,atom-one-dark-orange-1))   `(realgud-overlay-arrow2        ((t (:foreground ,atom-one-dark-orange-2))))
-                                    ))
+   `(realgud-overlay-arrow3        ((t (:foreground ,atom-one-dark-orange-1))   `(realgud-overlay-arrow2        ((t (:foreground ,atom-one-dark-orange-2))))))
+
    '(realgud-bp-enabled-face       ((t (:inherit (error)))))
    `(realgud-bp-disabled-face      ((t (:inherit (secondary-selection)))))
    `(realgud-bp-line-enabled-face  ((t (:box (:color ,atom-one-dark-red-1)))))
@@ -676,8 +677,8 @@
    ;; tab-bar-mode
    `(tab-bar-tab-inactive ((t (:background ,atom-one-dark-bg-hl :foreground ,atom-one-dark-fg))))
    `(tab-bar-tab          ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-purple))))
-   `(tab-bar              ((t (:background ,atom-one-dark-bg-hl))))
-   ))
+   `(tab-bar              ((t (:background ,atom-one-dark-bg-hl))))))
+
 
 (atom-one-dark-with-color-variables
   (custom-theme-set-variables
@@ -700,8 +701,8 @@
    ;; ansi-color
    `(ansi-color-names-vector
      [,atom-one-dark-black ,atom-one-dark-red-1 ,atom-one-dark-green ,atom-one-dark-orange-2
-      ,atom-one-dark-blue ,atom-one-dark-purple ,atom-one-dark-cyan ,atom-one-dark-fg])
-   ))
+      ,atom-one-dark-blue ,atom-one-dark-purple ,atom-one-dark-cyan ,atom-one-dark-fg])))
+
 
 (defvar atom-one-dark-theme-force-faces-for-mode t
   "If t, atom-one-dark-theme will use Face Remapping to alter the theme faces for
