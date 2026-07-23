@@ -37,7 +37,8 @@
                    ("atom-one-dark-fg"       . (if ,256color "color-248" "#8B828F"))
                    ;("atom-one-dark-bg"       . (if ,256color "color-235" "#282C34"))
                    ;("atom-one-dark-bg"       . (if ,256color "color-235" "#232326"))
-                   ("atom-one-dark-bg"       . (if ,256color "color-235" "#121314"))
+                   ;("atom-one-dark-bg"       . (if ,256color "color-235" "#121314"))  ; vscode's bg color
+                   ("atom-one-dark-bg"       . (if ,256color "color-235" "#1e1e1e"))
                    ("atom-one-dark-bg-1"     . (if ,256color "color-234" "#121417"))
                    ("atom-one-dark-bg-hl"    . (if ,256color "color-236" "#2C323C"))
                    ("atom-one-dark-gutter"   . (if ,256color "color-239" "#4B5363"))
